@@ -4,28 +4,27 @@ import { Briefcase } from 'lucide-react';
 export default function Timeline() {
   const experiences = [
     {
-      role: 'Software Engineer',
-      company: 'App Development Solutions', // Placeholder company name that looks professional
-      duration: '2024 - Present',
+      role: 'Mobile & Fullstack Developer',
+      company: 'Bira Ventures Pvt. Ltd.',
+      duration: 'January 2026 – Present',
       bullets: [
-        'Developed, tested, and published cross-platform React Native apps for iOS & Android ecosystems.',
-        'Integrated Firebase services (Auth, Firestore, Cloud Functions, and Analytics) to optimize backend workflows.',
-        'Architected and consumed robust REST APIs ensuring smooth frontend-backend synchronization.',
-        'Configured Push Notifications with FCM and Apple APNS to boost user engagement rates by 25%.',
-        'Implemented geolocation mapping services, route matching, and real-time location tracking interfaces.',
-        'Embedded popular Payment Gateways (Stripe, Razorpay, In-App Purchases) securely using client-side SDKs.',
+        'Spearheaded the end-to-end development and lifecycle management of 4+ high-performance cross-platform iOS and Android applications using React Native and TypeScript, from architecture through internal testing and release readiness.',
+        'Architected clean state management solutions by integrating 20+ secure REST APIs with Redux Toolkit, enhancing data synchronization and application security protocols.',
+        'Engineered performance-tuning strategies that reduced screen load times by 30%, significantly improving user experience across low-to-high-end mobile devices.',
+        'Collaborated within cross-functional Agile/Scrum teams across 2-week sprint cycles, participating in sprint planning, daily stand-ups, and retrospectives, contributing to the on-time delivery of 4+ iOS and Android application builds.',
       ],
     },
-    // We can add a prior experience or freelance projects to make it a real timeline
     {
-      role: 'Junior Full Stack Developer',
-      company: 'Freelance & Open Source',
-      duration: '2023 - 2024',
+      role: 'Software Engineer',
+      company: 'Csharptek Pvt. Ltd.',
+      duration: 'June 2024 – December 2025',
       bullets: [
-        'Built full-stack web applications using React.js, Node.js, Express, and PostgreSQL.',
-        'Maintained state management using Redux Toolkit and integrated Prisma ORM for database modeling.',
-        'Designed styling systems using CSS Variables, HTML5 semantic layout, and Tailwind CSS.',
-        'Collaborated using Git version control and participated in code review processes to ensure code quality.',
+        'Engineered and deployed 5+ robust mobile and web applications for iOS and Android using React Native, React.js, and Node.js, tailored for complex Healthcare and FinTech domains.',
+        'Redesigned intuitive UI/UX workflows and integrated 30+ RESTful APIs, driving a 25% increase in user engagement and significantly reducing navigation complexity.',
+        'Architected core feature sets for AI-powered, service management, FinTech, and healthcare platforms while maintaining 100% compliance with strict data privacy regulations (e.g., HIPAA).',
+        'Managed end-to-end Apple App Store and Google Play Store submission processes for mobile applications including Amalgamate and Companion Medical Scribe, including app signing, provisioning profiles, and release compliance checks, reducing turnaround.',
+        'Resolved 100+ critical bugs and proactively participated in peer code reviews, improving codebase stability and reducing production regressions by 20%.',
+        'Delivered clean, high-quality code within rapid Agile/Scrum development cycles, cutting post-release bugs by 80% and authoring onboarding documentation.',
       ],
     }
   ];

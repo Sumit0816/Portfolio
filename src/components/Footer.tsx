@@ -38,10 +38,10 @@ const LinkedinIcon = ({ size = 20 }: { size?: number }) => (
 
 export default function Footer() {
   const socials = [
-    { href: 'https://github.com/sumitrajbhar', icon: GithubIcon, label: 'GitHub' },
-    { href: 'https://linkedin.com/in/sumitrajbhar', icon: LinkedinIcon, label: 'LinkedIn' },
-    { href: 'mailto:sumitrajbhar@example.com', icon: Mail, label: 'Email' },
-    { href: 'tel:+919876543210', icon: Phone, label: 'Phone' },
+    { href: 'https://github.com/Sumit0816/Portfolio', icon: GithubIcon, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/sumit-rajbhar-069326258', icon: LinkedinIcon, label: 'LinkedIn' },
+    { href: 'mailto:rajsumit0511@gmail.com', icon: Mail, label: 'Email' },
+    { href: 'tel:+916299133605', icon: Phone, label: 'Phone' },
   ];
 
   return (

@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Smartphone, AppWindow } from 'lucide-react';
-import scribeImg from '../assets/scribe.png';
-import amalgamateImg from '../assets/amalgamate.png';
+import medicalAiImg from '../assets/medicalAi.jpeg';
+import amalgamateImg from '../assets/amalgamate.jpeg';
+import gpsImg from '../assets/gps_tracking.png';
 
 // Custom inline GitHub icon for compatibility
 const GithubIcon = ({ size = 16 }: { size?: number }) => (
@@ -24,23 +25,33 @@ const GithubIcon = ({ size = 16 }: { size?: number }) => (
 const projects = [
   {
     title: 'Companion Medical Scribe',
-    description: 'An AI-powered React Native application designed for medical practitioners. Captures real-time doctor-patient interactions and processes clinical audio files to output highly accurate medical transcriptions and structured clinical notes synced with Firebase.',
-    image: scribeImg,
-    tech: ['React Native', 'Node.js', 'AI Integration', 'Firebase'],
+    description: 'An AI-powered healthcare application for iOS, Android, and web. Captures real-time doctor-patient interactions and processes clinical audio files to output highly accurate medical transcriptions and structured clinical notes synced with Firebase.',
+    image: medicalAiImg,
+    tech: ['React Native', 'React.js', 'Firebase', 'REST APIs'],
     links: [
-      { text: 'Live Demo', url: 'https://example.com/scribe', icon: ExternalLink, primary: true },
-      { text: 'GitHub', url: 'https://github.com/sumitrajbhar/medical-scribe', icon: GithubIcon, primary: false },
+      { text: 'Live Demo', url: 'https://app.companionscribeai.com', icon: ExternalLink, primary: true },
+      { text: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.medai', icon: Smartphone, primary: false },
+      { text: 'App Store', url: 'https://apps.apple.com/in/app/companion-medical-scribe-ai/id6739332630', icon: Smartphone, primary: false },
     ],
   },
   {
     title: 'Amalgamate',
-    description: 'A robust mobile application that integrates complex financial databases. Designed for seamless client accounting, real-time analytics monitoring, budget insights, and detailed performance metrics synced over secure REST APIs.',
+    description: 'A scalable, subscription-based social media ecosystem for iOS, Android, and Web featuring short-form video streaming, custom voting mechanics, facial authentication, and secure PayPal payout gateways.',
     image: amalgamateImg,
-    tech: ['React Native', 'PostgreSQL', 'REST APIs', 'Node.js'],
+    tech: ['React Native', 'React.js', 'Node.js', 'PayPal API', 'REST APIs'],
     links: [
-      { text: 'Website', url: 'https://example.com/amalgamate', icon: AppWindow, primary: true },
-      { text: 'Play Store', url: 'https://play.google.com', icon: Smartphone, primary: false },
-      { text: 'App Store', url: 'https://apps.apple.com', icon: Smartphone, primary: false },
+      { text: 'Website', url: 'https://amalgamate.ca/', icon: AppWindow, primary: true },
+      { text: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.amalgamate', icon: Smartphone, primary: false },
+      { text: 'App Store', url: 'https://apps.apple.com/in/app/amalgamate/id6744918457', icon: Smartphone, primary: false },
+    ],
+  },
+  {
+    title: 'Vehicle Tracking',
+    description: 'A comprehensive GPS-enabled vehicle tracking solution for iOS and Android featuring live location monitoring, geofencing, route history mapping, fleet metrics, and optimized background location synchronization.',
+    image: gpsImg,
+    tech: ['React Native', 'Node.js', 'PostgreSQL', 'Google Maps API'],
+    links: [
+      { text: 'GitHub', url: 'https://github.com/Sumit0816/Portfolio', icon: GithubIcon, primary: true },
     ],
   },
 ];

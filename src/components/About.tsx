@@ -1,19 +1,29 @@
 import { motion } from 'framer-motion';
-import avatarImg from '../assets/avatar.png';
+import aboutMeImg from '../assets/aboutMe.jpeg';
 import { Calendar, GraduationCap, Code2, Award } from 'lucide-react';
 
 export default function About() {
   const stats = [
     { num: '2.5+', label: 'Years Experience', icon: Calendar },
-    { num: '15+', label: 'Projects Completed', icon: Award },
-    { num: '10+', label: 'Technologies Mastered', icon: Code2 },
+    { num: '10+', label: 'Apps & Websites', icon: Award },
+    { num: '15+', label: 'Tech & Toolkits', icon: Code2 },
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Technology in Computer Science',
-      institution: 'Technical University',
+      degree: 'Bachelor of Technology (B.Tech) – Computer Science Engineering',
+      institution: 'BNCET, Lucknow',
       duration: '2020 - 2024',
+    },
+    {
+      degree: 'Diploma – Mechanical Engineering',
+      institution: 'C.V. Raman College of Engineering, Bhubaneswar',
+      duration: '2018 - 2021',
+    },
+    {
+      degree: 'Higher Secondary & Secondary Education',
+      institution: 'DAV Public School, Urimari, Hazaribagh',
+      duration: 'Completed 2018',
     }
   ];
 
@@ -38,7 +48,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <img src={avatarImg} alt="Sumit Rajbhar" className="about-photo" />
+          <img src={aboutMeImg} alt="Sumit Rajbhar" className="about-photo" />
           <div className="about-photo-border"></div>
         </motion.div>
 
@@ -52,10 +62,10 @@ export default function About() {
         >
           <h3>Hello! I'm Sumit Rajbhar</h3>
           <p className="about-text">
-            I am a passionate Software Engineer with a deep expertise in mobile application development using React Native and building end-to-end full-stack web products. I specialize in crafting elegant, responsive user interfaces and building highly efficient, scalable backend APIs.
+            I am a results-driven Mobile and Full Stack Developer with 2+ years of professional experience specializing in React Native, React.js, and full-stack JavaScript ecosystems. I have a proven track record of architecting, developing, and deploying cross-platform iOS and Android applications across FinTech, Healthcare, and AI domains, with hands-on experience publishing and managing releases on the Apple App Store and Google Play Store.
           </p>
           <p className="about-text">
-            Over the last 2.5+ years, I have helped startups and companies transform concepts into production-ready software solutions. My engineering philosophy revolves around writing clean, self-documenting code and designing performant user flows.
+            I excel in optimizing application performance (reducing screen load times by 30%), integrating secure RESTful APIs, and implementing scalable state management solutions. I enjoy collaborating in Agile/Scrum environments to deliver high-quality, user-centric software.
           </p>
 
           {/* Stats Grid */}
@@ -80,17 +90,19 @@ export default function About() {
               <GraduationCap className="text-accent" size={24} style={{ color: 'var(--accent)' }} />
               Education
             </h4>
-            {education.map((edu, index) => (
-              <div key={index} style={{ backgroundColor: 'var(--bg-tertiary)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--card-border)' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 600, color: 'var(--text-primary)', flexWrap: 'wrap', gap: '8px' }}>
-                  <span>{edu.degree}</span>
-                  <span style={{ fontSize: '0.9rem', color: 'var(--accent)' }}>{edu.duration}</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {education.map((edu, index) => (
+                <div key={index} style={{ backgroundColor: 'var(--bg-tertiary)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--card-border)' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 600, color: 'var(--text-primary)', flexWrap: 'wrap', gap: '8px' }}>
+                    <span>{edu.degree}</span>
+                    <span style={{ fontSize: '0.9rem', color: 'var(--accent)' }}>{edu.duration}</span>
+                  </div>
+                  <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                    {edu.institution}
+                  </div>
                 </div>
-                <div style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                  {edu.institution}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
