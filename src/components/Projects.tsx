@@ -29,7 +29,7 @@ const projects = [
     image: medicalAiImg,
     tech: ['React Native', 'React.js', 'Firebase', 'REST APIs'],
     links: [
-      { text: 'Live Demo', url: 'https://app.companionscribeai.com', icon: ExternalLink, primary: true },
+      { text: 'Website', url: 'https://app.companionscribeai.com', icon: ExternalLink, primary: true },
       { text: 'Play Store', url: 'https://play.google.com/store/apps/details?id=com.medai', icon: Smartphone, primary: false },
       { text: 'App Store', url: 'https://apps.apple.com/in/app/companion-medical-scribe-ai/id6739332630', icon: Smartphone, primary: false },
     ],
