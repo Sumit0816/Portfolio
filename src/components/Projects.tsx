@@ -49,7 +49,7 @@ const projects = [
     title: 'Vehicle Tracking',
     description: 'A comprehensive GPS-enabled vehicle tracking solution for iOS and Android featuring live location monitoring, geofencing, route history mapping, fleet metrics, and optimized background location synchronization.',
     image: gpsImg,
-    tech: ['React Native', 'Node.js', 'PostgreSQL', 'Google Maps API'],
+    tech: ['React Native', 'Node.js', 'PostgreSQL', 'Mapbox API'],
     links: [
       { text: 'GitHub', url: 'https://github.com/Sumit0816/Portfolio', icon: GithubIcon, primary: true },
     ],
