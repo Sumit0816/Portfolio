@@ -4,7 +4,7 @@ import { Calendar, GraduationCap, Code2, Award } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { num: '2.3+', label: 'Years Experience', icon: Calendar },
+    { num: '2.4+', label: 'Years Experience', icon: Calendar },
     { num: '10+', label: 'Apps & Websites', icon: Award },
     { num: '15+', label: 'Tech & Toolkits', icon: Code2 },
   ];

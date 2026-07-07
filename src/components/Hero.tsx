@@ -194,7 +194,7 @@ export default function Hero() {
             fontSize: '0.95rem',
           }}
         >
-          <span>✨ 2.3+ Years Industry Experience</span>
+          <span>✨ 2.4+ Years Industry Experience</span>
         </motion.div>
       </div>
     </section>
