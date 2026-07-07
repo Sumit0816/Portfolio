@@ -96,6 +96,7 @@ export default function Hero() {
         {floatingIcons.map(({ Icon, top, left, right, color, delay }, idx) => (
           <motion.div
             key={idx}
+            className="floating-icon"
             style={{
               position: 'absolute',
               top,

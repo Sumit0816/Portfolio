@@ -1,5 +1,6 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
 import ThemeToggle from './components/ThemeToggle';
 import './App.css';
@@ -94,20 +95,28 @@ export default function App() {
       </header>
 
       {/* Mobile Navigation Dropdown */}
-      {mobileMenuOpen && (
-        <nav className="mobile-nav">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={`nav-link ${activeSection === link.href.slice(1) ? 'active' : ''}`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      )}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.nav
+            className="mobile-nav"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+          >
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`nav-link ${activeSection === link.href.slice(1) ? 'active' : ''}`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </motion.nav>
+        )}
+      </AnimatePresence>
 
       {/* Sections Container */}
       <main>
