@@ -376,11 +376,12 @@ a:hover {
   max-width: 600px;
   font-size: 1.1rem;
   color: var(--text-secondary);
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 
 .hero-cta {
   display: flex;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 60px;
 }
@@ -390,6 +391,7 @@ a:hover {
     flex-direction: column;
     width: 100%;
     max-width: 300px;
+    margin: 0 auto 60px auto;
   }
 }
 
